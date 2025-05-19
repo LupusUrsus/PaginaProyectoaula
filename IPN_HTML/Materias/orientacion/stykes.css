@@ -1,0 +1,152 @@
+
+/* Estilos para el header y logos */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #952F57;
+  color: white;
+  padding: 5px 5px 5px 5px; /* Aumentamos el padding superior para mover la franja hacia abajo */
+  position: relative; /* Asegura que los logos estén posicionados correctamente dentro del header */
+  height: 180px; /* Asegura que la franja sea lo suficientemente alta para cubrir los logos */
+}
+
+/* Logo de CECYT3, alineado a la izquierda */
+.Cecyt3-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px; /* Ajuste en la parte superior */
+  left: 15px; /* Ajuste a la izquierda */
+}
+
+/* Logo del IPN, alineado a la derecha */
+.IPN-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px; /* Ajuste en la parte superior */
+  right: 15px; /* Ajuste a la derecha */
+}
+
+/* Ajuste al propósito para que quede más abajo */
+h1 {
+  margin-top: 25px; /* Desplaza el propósito más abajo */
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Estilos para el logo */
+.logo {
+  font-size: 50px; /* Aumentamos el tamaño del texto del título */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+}
+h2 {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* Estilos para el encabezado principal */
+.main-header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* Separa este encabezado de lo que venga abajo */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el segundo encabezado */
+.second-header {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  /* Separa el segundo encabezado del contenido superior e inferior */
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* (Opcional) Elegante línea divisoria encima del segundo encabezado */
+.second-header::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 auto 15px auto; /* Espacio debajo de la línea */
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: #952F57;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.recuadro { 
+  width: 300px;
+  padding: 20px;
+  background:  #c73d74; /* Color sólido */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* sombra base */
+}
+
+.recuadro:hover {
+  transform: scale(1.05); /* efecto de agrandamiento */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3); /* sombra más pronunciada al pasar el cursor */
+}
+
+
+.pdf-container {
+  display: none;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}

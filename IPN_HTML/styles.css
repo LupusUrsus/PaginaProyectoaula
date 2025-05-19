@@ -1,0 +1,155 @@
+
+/* Estilos para el header y logos */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #952F57;
+  color: white;
+  padding: 5px 5px 5px 5px; /* Aumentamos el padding superior para mover la franja hacia abajo */
+  position: relative; /* Asegura que los logos estén posicionados correctamente dentro del header */
+  height: 180px; /* Asegura que la franja sea lo suficientemente alta para cubrir los logos */
+}
+
+
+
+
+/* Logo de CECYT3, alineado a la izquierda */
+.Cecyt3-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px; /* Ajuste en la parte superior */
+  left: 15px; /* Ajuste a la izquierda */
+}
+
+/* Logo del IPN, alineado a la derecha */
+.IPN-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px; /* Ajuste en la parte superior */
+  right: 15px; /* Ajuste a la derecha */
+}
+
+/* Ajuste al propósito para que quede más abajo */
+h1 {
+  margin-top: 25px; /* Desplaza el propósito más abajo */
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Estilo para el texto "Materias" */
+h2 {
+  font-size: 30px; /* Aumentamos el tamaño de la fuente */
+  text-align: left;
+  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+  margin-top: 2px; /* Ajusta el espacio superior si es necesario */
+  color: #333; /* Color de texto por si necesitas cambiarlo */
+}
+
+/* Estilos para el logo */
+.logo {
+  font-size: 50px; /* Aumentamos el tamaño del texto del título */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+}
+
+/* Contenedor de las materias */
+.materias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px; /* Espaciado entre las materias */
+  padding: 20px;
+  grid-template-rows: repeat(3, 200px); /* Asegura que haya un espacio adecuado para cada fila */
+}
+
+/* Estilos comunes para las materias */
+.materia {
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f2f2f2; /* Fondo por defecto */
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  height: 100px; /* Altura del rectángulo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Asegura que la imagen no sobresalga del rectángulo */
+  transition: all 0.5s ease; /* Transición suave */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  
+}
+.materia a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit; /* Usa el mismo color del recuadro */
+  display: block; /* Hace que todo el recuadro sea clickeable */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Franja de color estático */
+.materia.geo {
+  background: linear-gradient(to left, #722020 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.bio {
+  background: linear-gradient(to left, #f39c12 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.filo {
+  background: linear-gradient(to left, #170dce 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.tics {
+  background: linear-gradient(to left, #184a84 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.ingles {
+  background: linear-gradient(to left, #279c17 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.compu {
+  background: linear-gradient(to left, #c3ca76 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.historia {
+  background: linear-gradient(to left, #605b6d 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.orientación {
+  background: linear-gradient(to left, #11565b 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+.materia.eoye {
+  background: linear-gradient(to left, #e74c3c 10px, transparent 10px) no-repeat;
+  background-size: 5px 100%;
+}
+
+/* Efecto de desplazamiento de la imagen */
+.materia:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del bloque */
+}

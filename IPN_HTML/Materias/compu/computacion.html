@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Aula</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Proyecto aula del 2IV8</div>
+    <div class="logo-container">
+      <img src="../../imagen/Cecyt3-gogo.png" alt="CECYT3 logo" class="Cecyt3-logo" />
+      <img src="../../imagen/IPN-logo.png" alt="IPN logo" class="IPN-logo" />
+    </div>
+  </header>
+
+  <div class="second-header">
+    <h2>Computación Básica II</h2>
+  </div>
+
+  <div class="contenedor">
+    <div class="recuadro" onclick="togglePDF('pdf1')">
+      <h2>Primer y Segundo Parcial</h2>
+      <div class="pdf-container" id="pdf1">
+        <iframe src="Docc/Guía_de_Computación_1.pdf"></iframe>
+        <a href="Docc/Guía_de_Computación_1.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <div class="recuadro" onclick="togglePDF('pdf2')">
+      <h2>Html</h2>
+      <div class="pdf-container" id="pdf2">
+        <iframe src="Docc/Guía_de_Computación_3.pdf"></iframe>
+        <a href="Docc/Guía_de_Computación_3.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+  <script src="scrip.js"></script>
+</body>
+</html>

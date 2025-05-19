@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Aula</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Proyecto aula del 2IV8</div>
+    <div class="logo-container">
+      <img src="../../imagen/Cecyt3-gogo.png" alt="CECYT3 logo" class="Cecyt3-logo" />
+      <img src="../../imagen/IPN-logo.png" alt="IPN logo" class="IPN-logo" />
+    </div>
+  </header>
+
+  <div class="second-header">
+    <h2>Geometría y Trigonometría</h2>
+  </div>
+
+  <div class="contenedor">
+    <div class="recuadro" onclick="togglePDF('pdf1')">
+      <h2>Primer Parcial</h2>
+      <div class="pdf-container" id="pdf1">
+        <iframe src="Docs/Temas del primer parcial de trigonometria.pdf"></iframe>
+        <a href="Docs/Temas del primer parcial de trigonometria.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <div class="recuadro" onclick="togglePDF('pdf2')">
+      <h2>Segundo Parcial</h2>
+      <div class="pdf-container" id="pdf2">
+        <iframe src="Docs/Temas del segundo parcial de geometria.pdf"></iframe>
+        <a href="Docs/Temas del segundo parcial de geometria.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <div class="recuadro" onclick="togglePDF('pdf3')">
+      <h2>Tercer Parcial</h2>
+      <div class="pdf-container" id="pdf3">
+        <iframe src="Docs/Temas del tercer parcial de geometria.pdf"></iframe>
+        <a href="Docs/Temas del tercer parcial de geometria.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <div class="recuadro" onclick="togglePDF('pdf4')">
+      <h2>Examen diagnostico</h2>
+      <div class="pdf-container" id="pdf4">
+        <iframe src=""></iframe>
+        <a href="" download>Descargar PDF</a>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
