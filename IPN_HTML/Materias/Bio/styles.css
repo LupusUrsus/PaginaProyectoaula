@@ -1,41 +1,55 @@
 
-/* Estilos para el header y logos */
+/* HEADER */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #952F57;
   color: white;
-  padding: 5px 5px 5px 5px; /* Aumentamos el padding superior para mover la franja hacia abajo */
-  position: relative; /* Asegura que los logos estén posicionados correctamente dentro del header */
-  height: 180px; /* Asegura que la franja sea lo suficientemente alta para cubrir los logos */
+  padding: 20px 10px;
 }
 
-/* Logo de CECYT3, alineado a la izquierda */
-.Cecyt3-logo {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 15px; /* Ajuste en la parte superior */
-  left: 15px; /* Ajuste a la izquierda */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
 }
 
-/* Logo del IPN, alineado a la derecha */
-.IPN-logo {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 15px; /* Ajuste en la parte superior */
-  right: 15px; /* Ajuste a la derecha */
+.logo-left,
+.logo-right {
+  width: 100px;
+  height: auto;
 }
 
-/* Ajuste al propósito para que quede más abajo */
+.logo-text {
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* TÍTULOS */
 h1 {
-  margin-top: 25px; /* Desplaza el propósito más abajo */
+  margin: 25px auto;
   text-align: center;
   font-size: 22px;
   line-height: 1.5;
+  padding: 0 10px;
 }
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+
+
+
 
 /* Estilos para el logo */
 .logo {
@@ -49,10 +63,6 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
-}
-h2 {
-  font-size: 22px;
-  font-style: italic;
 }
 
 /* Estilos para el encabezado principal */
@@ -149,4 +159,36 @@ a {
   color: white;
   padding: 8px;
   border-radius: 5px;
+}
+
+/* RESPONSIVE AJUSTES */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-left, .logo-right {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .logo-left, .logo-right {
+    width: 70px;
+  }
 }

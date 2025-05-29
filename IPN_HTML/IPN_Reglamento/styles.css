@@ -1,0 +1,221 @@
+/* HEADER */
+header {
+  background-color: #952F57;
+  color: white;
+  padding: 20px 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.logo-left,
+.logo-right {
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* TÍTULOS */
+h1 {
+  margin: 25px auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+
+
+
+
+/* Estilos para el logo */
+.logo {
+  font-size: 50px; /* Aumentamos el tamaño del texto del título */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+}
+
+/* RESPONSIVE AJUSTES */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-left, .logo-right {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .logo-left, .logo-right {
+    width: 70px;
+  }
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+main.contenido {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: #952F57;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#buscador {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#buscador:focus {
+  border-color: #952F57;
+}
+
+#contenedor-reglamentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.reglamento {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 6px solid #952F57;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.reglamento:hover {
+  transform: scale(1.02);
+}
+
+.reglamento h2 {
+  margin-top: 0;
+  color: #952F57;
+  font-size: 20px;
+}
+
+.reglamento p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.reglamento a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #952F57;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.reglamento a:hover {
+  background-color: #7a2445;
+}
+
+/* Estilos para los capítulos del reglamento */
+.capitulo {
+  background-color: #f8f5f7;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #d4a5b8;
+}
+
+.capitulo h3 {
+  color: #952F57;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.capitulo ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.capitulo li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Mejoras de responsive */
+@media (max-width: 768px) {
+  .capitulo {
+    padding: 12px;
+  }
+  
+  .capitulo h3 {
+    font-size: 16px;
+  }
+  
+  .capitulo li {
+    font-size: 13px;
+  }
+}
