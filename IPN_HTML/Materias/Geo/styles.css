@@ -126,7 +126,7 @@ body {
 
 .recuadro { 
   width: 300px;
-  padding: 50px;
+  padding: 20px;
   background:  #c73d74; /* Color sólido */
   border-radius: 8px;
   cursor: pointer;
