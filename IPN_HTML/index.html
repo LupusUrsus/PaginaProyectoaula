@@ -1,79 +1,132 @@
 <!DOCTYPE html>
+<!-- Indica al navegador que se está usando HTML5 -->
+
 <html lang="es-MX">
+<!-- Etiqueta raíz del documento. El atributo 'lang' indica el idioma: español de México -->
+
 <head>
   <meta charset="UTF-8">
+  <!-- Establece la codificación de caracteres a UTF-8 (soporta ñ, acentos, etc.) -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace que la página sea responsive, adaptándose a móviles y pantallas pequeñas -->
+
   <title>2IV8 Proyecto Aula</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+
   <link rel="stylesheet" href="styles.css">
+  <!-- Enlace a la hoja de estilos externa en CSS -->
 </head>
+
 <body>
+  <!-- Cuerpo del sitio web: todo el contenido visible -->
+
   <header>
+    <!-- Encabezado principal (parte superior del sitio) -->
+
     <div class="logo-container">
+      <!-- Contenedor de los logos y texto centrado -->
+
       <img src="imagen/Cecyt3-gogo.png" alt="Logo CECyT 3" class="logo-left">
-      <div class="logo-text">Proyecto Aula del 2IV8</div>
+      <!-- Logo del CECyT 3 alineado a la izquierda -->
+
+      <div class="logo-text">Orienta Burros</div>
+      <!-- Texto principal del encabezado -->
+
       <img src="imagen/IPN-logo.png" alt="Logo IPN" class="logo-right">
+      <!-- Logo del IPN alineado a la derecha -->
     </div>
   </header>
 
   <main>
-    <h1>Propósito: Crear un sitio web para ayudar a los alumnos de segundo semestre a estudiar materias impartidas en la escuela CECYT 3 "Estanislao Ramírez Ruiz"</h1>
+    <!-- Contenido principal del sitio -->
+
+    <h1>Propósito: Crear un sitio web con material de estudio para ayudar a los alumnos del segundo semestre a estudiar para un ETS, Examen o un tema que se les complique.</h1>
+    <!-- Título principal con el propósito del sitio -->
+
     <h2>Materias</h2>
+    <!-- Subtítulo que introduce la sección de materias -->
 
     <div class="materias">
+      <!-- Contenedor de todas las materias, organizado en cuadrícula -->
+
+      <!-- Cada sección representa una materia distinta -->
       <section class="materia geo">
         <a href="Materias/Geo/geometria.html">Geometría y Trigonometría</a>
       </section>
+
       <section class="materia bio">
         <a href="Materias/Bio/biologia.html">Biología Básica</a>
       </section>
+
       <section class="materia filo">
         <a href="Materias/filo/filosofia.html">Filosofía II</a>
       </section>
+
       <section class="materia tics">
         <a href="Materias/Tics/investigacion.html">Técnicas de Investigación de Campo</a>
       </section>
+
       <section class="materia ingles">
         <a href="Materias/ingles/ingles.html">Inglés II</a>
       </section>
+
       <section class="materia compu">
         <a href="Materias/compu/computacion.html">Computación Básica II</a>
       </section>
+
       <section class="materia historia">
         <a href="Materias/historia/hirtoria.html">Historia de México Contemporáneo II</a>
       </section>
+
       <section class="materia orientacion">
         <a href="Materias/orientacion/orientacion.html">Orientación Juvenil y Profesional II</a>
       </section>
+
       <section class="materia eoye">
         <a href="Materias/Expre/Expresion.html">Expresión Oral y Escrita II</a>
       </section>
     </div>
   </main>
-  <br>
-<header>
-  <div class="Mono-container">
-    <div class="mono-text">¡Conoce tus derechos!</div>
-    <div class="mono-text1">Este apartado es para que encuentres de manera facil y estructurada el reglamento del IPN</div>
-  </div>
-</header>
-<a href="IPN_Reglamento/Reglamento.html" class="reglamento-link">
-  <div class="reglamento-box">
-    Consulta el Reglamento del IPN
-  </div>
-</a>
-
 
   <br>
+  <!-- Salto de línea (espacio visual) -->
 
-    <script src="script.js"></script>
-    <footer class="footer-dev">
-  <p>Equipo de desarrollo:</p>
-  <ul>
-    <li>Toledo Sánchez Ethan Radahi</li>
-    <li>HachiferDev</li>
-    <li>Flores Mendoza Santiago</li>
-  </ul>
-</footer>
+  <header>
+    <!-- Otro encabezado para una nueva sección -->
+
+    <div class="Mono-container">
+      <!-- Contenedor del mensaje sobre derechos estudiantiles -->
+      <div class="mono-text">¡Conoce tus derechos!</div>
+      <div class="mono-text1">Este apartado es para que encuentres...el reglamento</div>
+    </div>
+  </header>
+
+  <a href="IPN_Reglamento/Reglamento.html" class="reglamento-link">
+    <!-- Enlace que lleva al reglamento del IPN -->
+
+    <div class="reglamento-box">
+      <!-- Caja estilizada que invita a consultar el reglamento -->
+      Consulta el Reglamento del IPN
+    </div>
+  </a>
+
+  <br>
+  <!-- Otro salto de línea -->
+
+  <script src="script.js"></script>
+  <!-- Enlace al archivo JavaScript, si necesitas agregar funciones dinámicas -->
+
+  <footer class="footer-dev">
+    <!-- Pie de página del sitio -->
+
+    <p>Equipo de desarrollo:</p>
+    <ul>
+      <li>Toledo Sánchez Ethan Radahi</li>
+      <li>HachiferDev</li>
+      <li>Flores Mendoza Santiago</li>
+    </ul>
+  </footer>
 
 </body>
 </html>

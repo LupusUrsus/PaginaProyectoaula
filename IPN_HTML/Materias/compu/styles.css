@@ -192,3 +192,10 @@ a {
     width: 70px;
   }
 }
+
+p {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 10px auto;
+}

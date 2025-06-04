@@ -19,7 +19,199 @@ header {
 .logo-left,
 .logo-right {
   width: 100px;
+/* HEADER */
+header {
+  background-color: #952F57;
+  color: white;
+  padding: 20px 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.logo-left,
+.logo-right {
+  width: 100px;
   height: auto;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* TÍTULOS */
+h1 {
+  margin: 25px auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+
+
+
+
+/* Estilos para el logo */
+.logo {
+  font-size: 50px; /* Aumentamos el tamaño del texto del título */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold; /* Puedes ajustar el peso de la fuente si lo deseas */
+}
+
+/* Estilos para el encabezado principal */
+.main-header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* Separa este encabezado de lo que venga abajo */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el segundo encabezado */
+.second-header {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  /* Separa el segundo encabezado del contenido superior e inferior */
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* (Opcional) Elegante línea divisoria encima del segundo encabezado */
+.second-header::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 0 auto 15px auto; /* Espacio debajo de la línea */
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: #952F57;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.recuadro { 
+  width: 300px;
+  padding: 50px;
+  background:  #c73d74; /* Color sólido */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* sombra base */
+}
+
+.recuadro:hover {
+  transform: scale(1.05); /* efecto de agrandamiento */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3); /* sombra más pronunciada al pasar el cursor */
+}
+
+
+.pdf-container {
+  display: none;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE AJUSTES */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-left, .logo-right {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .logo-left, .logo-right {
+    width: 70px;
+  }
+}
 }
 
 .logo-text {
