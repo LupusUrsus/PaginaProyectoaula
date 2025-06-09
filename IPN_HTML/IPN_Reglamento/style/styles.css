@@ -1,44 +1,133 @@
+:root {
+  --guinda: #7A003C;
+  --oro: #FFD700;
+  --gris: #333;
+  --claro: #f9f9f9;
+  --fondo: #fff;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  max-width: 900px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--claro);
+  color: var(--gris);
+}
+
+/* 🛡️ Encabezado horizontal con logos y texto centrado */
+header.banner {
+  background-color: var(--guinda);
+  color: white;
+  padding: 20px 10px;
+}
+
+.encabezado-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.titulo-banner {
+  min-width: 200px;
+}
+
+.titulo-banner h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.titulo-banner h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+
+/* 🧠 Contenido principal */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.busqueda label {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 input[type="text"] {
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0 30px;
+  border: 2px solid var(--guinda);
+  border-radius: 6px;
 }
 
+/* 🧾 Resultados estilizados */
 .resultado {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  background-color: var(--fondo);
+  border-left: 5px solid var(--guinda);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 6px;
 }
 
 .resultado h3 {
-  margin: 0;
+  margin-top: 0;
+  color: var(--guinda);
 }
 
 .resultado p {
-  margin: 10px 0;
+  line-height: 1.6;
 }
 
 .resultado button {
-  margin-top: 5px;
-  padding: 6px 12px;
-  background-color: #0066cc;
+  background-color: var(--guinda);
   color: white;
   border: none;
-  cursor: pointer;
+  padding: 8px 16px;
   border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95em;
 }
 
 .resultado button:hover {
-  background-color: #004999;
+  background-color: #5e002e;
 }
 
 mark {
-  background-color: yellow;
-  font-weight: bold;
+  background-color: var(--oro);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* 📄 Visor */
+iframe {
+  border: 1px solid var(--guinda);
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* 🔗 Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--guinda);
+  color: white;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: var(--oro);
+  text-decoration: underline;
 }
