@@ -1,0 +1,26 @@
+{
+  "name": "ipn_html",
+  "version": "1.0.0",
+  "description": "Aqui esta el codigo de la pagina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LupusUrsus/PaginaProyectoaula.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LupusUrsus/PaginaProyectoaula/issues"
+  },
+  "homepage": "https://github.com/LupusUrsus/PaginaProyectoaula#readme",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.1.6",
+    "puppeteer": "^24.10.0"
+  }
+}
