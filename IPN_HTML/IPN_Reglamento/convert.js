@@ -20,7 +20,7 @@ async function convertirPDFs() {
       const texto = data.text.trim();
 
       if (!texto) {
-        console.warn(`⚠️ El PDF "${archivo}" no tiene texto legible (posible escaneo).`);
+        console.warn(`⚠️ El PDF "${archivo}" no tiene texto legible.`);
         continue;
       }
 
@@ -28,18 +28,17 @@ async function convertirPDFs() {
         id: archivo.replace(".pdf", ""),
         title: archivo.replace(".pdf", "").replace(/_/g, " "),
         content: texto,
-        source: "local"
+        source: `reglamentos/${archivo}` // ← Ruta al PDF original
       });
 
       console.log(`✅ Procesado: ${archivo}`);
     } catch (err) {
-      console.warn(`❌ Error leyendo "${archivo}":`, err.message);
+      console.warn(`❌ Error en "${archivo}": ${err.message}`);
     }
   }
 
   await fs.outputJson(salidaJSON, resultados, { spaces: 2 });
-  console.log("📄 Archivo JSON guardado en:", salidaJSON);
+  console.log("📄 Documento generado en:", salidaJSON);
 }
 
 convertirPDFs().catch(console.error);
-

@@ -13,13 +13,10 @@ fetch("data/documentos.json")
 
       documentos.forEach(doc => this.add(doc));
     });
-
-    console.log("🔎 Índice creado con Lunr.js");
   });
 
 function buscar() {
   const query = document.getElementById("buscador").value.trim();
-
   if (!query || !idx) return;
 
   const resultados = idx.search(query);
@@ -39,7 +36,7 @@ function buscar() {
       <div class="resultado">
         <h3>${doc.title}</h3>
         <p>${snippet}</p>
-        <small>Fuente: ${doc.source}</small>
+        <a href="${doc.source}" target="_blank">📄 Ver documento PDF</a>
       </div>
     `;
   });
