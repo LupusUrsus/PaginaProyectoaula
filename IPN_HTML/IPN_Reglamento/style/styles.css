@@ -15,3 +15,30 @@ input[type="text"] {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
+
+.resultado h3 {
+  margin: 0;
+}
+
+.resultado p {
+  margin: 10px 0;
+}
+
+.resultado button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.resultado button:hover {
+  background-color: #004999;
+}
+
+mark {
+  background-color: yellow;
+  font-weight: bold;
+}
